@@ -1,0 +1,146 @@
+/*
+Colors used:
+Primary Color (Black): #000000;
+Secondary Color (Gainsboro): #DCDCDC;
+Secondary Color (GhostWhite): #F8F8FF;
+*/
+body {
+    background-color: #000000;
+    font-family: 'DM Serif Display', sans-serif;
+    font-size: 16px; /* Sets the font size to 16px */
+    font-weight: 300; /* Sets the font weight to 300 */
+    line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+    color: #DCDCDC;
+      }
+      
+      h1, h2, h3, h4 {
+        line-height: 1.4;
+      }
+      h1 {
+        font-size: 2.75em;
+        font-weight: 700;
+      }
+      
+      h2 {
+        font-size: 2.25em;
+        font-weight: 700;
+      }
+      
+      h3 {
+        font-size: 1.75em;
+        font-weight: 400;
+      }
+      h4 {
+        font-size: 1.35em;
+        font-weight: 400;
+      }
+img {
+    width: 100%;
+  }
+a {
+    color: #f5b301;
+    text-decoration: none; /* No underlining */
+  }
+a:hover {
+    color: #fed053;
+    text-decoration: underline; /* Underlining when hovering over a link */
+  }
+a:visited { /* visited link */
+    color: #ffbc05;
+  }
+a:active { /* selected link */
+    color: #f5b301;
+  }
+a:hover,
+a:focus {
+    color: #fed053;
+    text-decoration: underline;
+  }
+
+.button {
+    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    background-color: #F8F8FF;
+    color: #000000; /* needed to override the default link color */
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid #8ab9f1; /* width of the border, type, color */
+    transition: 0.2s opacity;
+  }
+.button:hover {
+    opacity: 0.8; /* Reduces the opacity of the button to 80% */
+    text-decoration: none;
+  }
+.button:active {
+    color: #8ab9f1;
+}
+
+.button.contact {
+    background-color: #f8f8ff;
+    color: #000000;
+    text-transform: uppercase;
+    border: 2px solid #8ab9f1;
+  }
+.button.contact:active {
+    color: #679bf1;
+}
+.button.contact:hover {
+    background-color: #8ab9f1;
+    color: #000000;
+  }
+
+.button.read.more {
+    background-color: #f8f8ff;
+    color: #000000;
+    text-transform: uppercase;
+    border: 2px solid #8ab9f1;
+  }
+.button.read.more:active {
+    color: #679bf1;
+}
+.button.read.more:hover {
+    background-color: #8ab9f1;
+    color: #000000;
+  }
+
+.button.case.study {
+    background-color: #f8f8ff;
+    color: #000000;
+    text-transform: uppercase;
+    border: 2px solid #8ab9f1;
+  }
+.button.case.study:active {
+    color: #679bf1;
+}
+.button.case.study:hover {
+    background-color: #8ab9f1;
+    color: #000000;
+  }
+
+  .button.prototype {
+    background-color: #f8f8ff;
+    color: #000000;
+    text-transform: uppercase;
+    border: 2px solid #8ab9f1;
+  }
+.button.prototype:active {
+    color: #679bf1;
+}
+.button.prototype:hover {
+    background-color: #8ab9f1;
+    color: #000000;
+  }
+
+.button.CV {
+    background-color: #f8f8ff;
+    color: #000000;
+    text-transform: uppercase;
+    border: 2px solid #8ab9f1;
+  }
+.button.CV:active {
+    color: #679bf1;
+}
+.button.CV:hover {
+    background-color: #8ab9f1;
+    color: #000000;
+  }
