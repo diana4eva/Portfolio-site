@@ -12,10 +12,10 @@
     </head>
     <body>
         <header>
-            <div>
+            <div class="container">
                 <a href="#">Diana Fridelova</a>
                 <nav>
-                  <ul>
+                  <ul class="navigation">
                     <li><a href="index.html">Work</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -24,15 +24,18 @@
             </div>
         </header>
         <main>
-            <div>
+            <div id="hero">
+              <div class="container"> 
                 <section class="hero">
-                  <div class="hero-content">
+                  <div class="hero-section">
                     <h1>Hi, my name is Diana</h1>
                         <span></span>
                         <p>Connecting people to their playfulness, empathy and compassion.</p>
                   </div>
+            <div id="work">
+              <div class="container">
                     <h2>My Work</h2>
-                    <div><!-- open row that holds (2) columns for project -->
+                    <div class="row"><!-- open row that holds (2) columns for project -->
                         <div><!-- open first column (used for image) -->
                           <picture>
                             <source srcset="img/experto/experto@1x.jpg" media="(max-width:767px)">
@@ -49,8 +52,8 @@
                           </p><!-- end paragraph -->
                           <a href="experto.html" class="button read more">Read more</a><!-- button or link label -->
                         </div><!-- end second column -->
-                      </div><!-- end row that holds (2) columns for project -->
-                      <div><!-- open row that holds (2) columns for project -->
+                    </div><!-- end row that holds (2) columns for project -->
+                      <div class="row"><!-- open row that holds (2) columns for project -->
                         <div><!-- open first column (used for image) -->
                           <picture>
                             <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)">
@@ -68,15 +71,17 @@
                           <a href="" class="button read more">Read more</a><!-- button or link label -->
                         </div><!-- end second column -->
                       </div><!-- end row that holds (2) columns for project -->
+              </div>        
             </div>
                 <!-- Other sections of the page go here -->
         </main>
         <footer>
+          <div class="container">
             <h2>Get in Touch</h2>
                 <p>
                   Looking to make magic happen? Let's connect and see where it takes us :)
                 </p>
-                <div>
+                <div class="row">
                      <a href="difridelova@gmail.com" class="button contact">Email me</a>
                 </div>
                 <div>
@@ -94,6 +99,7 @@
                 </div>
                 <p>Copyright Diana-Fridelova 2023</p>
                 </div>
+           </div>
         </footer>
 
     </body>

@@ -4,6 +4,42 @@ Primary Color (Black): #000000;
 Secondary Color (Gainsboro): #DCDCDC;
 Secondary Color (GhostWhite): #F8F8FF;
 */
+* {
+  box-sizing: border-box;
+}
+header {
+  background-color: #F4EEE1;
+  text-align: center;
+  padding: 10px 0;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+nav > ul > li > a:visited {
+  color:#679bf1;
+}
+nav > ul > li > a:hover {
+  color:#8ab9f1;
+}
+nav > ul > li > a:active {
+  color:#679bf1;
+}
+#hero {
+  background-color: #000000;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
 body {
     background-color: #000000;
     font-family: 'DM Serif Display', sans-serif;
@@ -38,27 +74,27 @@ img {
     width: 100%;
   }
 a {
-    color: #f5b301;
+    color: #679bf1;
     text-decoration: none; /* No underlining */
   }
 a:hover {
-    color: #fed053;
+    color: #8ab9f1;
     text-decoration: underline; /* Underlining when hovering over a link */
   }
 a:visited { /* visited link */
-    color: #ffbc05;
+    color: #679bf1;
   }
 a:active { /* selected link */
-    color: #f5b301;
+    color: #679bf1;
   }
 a:hover,
 a:focus {
-    color: #fed053;
+    color: #679bf1;
     text-decoration: underline;
   }
 
 .button {
-    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block */
     background-color: #F8F8FF;
     color: #000000; /* needed to override the default link color */
     font-weight: 400;
@@ -117,7 +153,7 @@ a:focus {
     color: #000000;
   }
 
-  .button.prototype {
+.button.prototype {
     background-color: #f8f8ff;
     color: #000000;
     text-transform: uppercase;
@@ -144,3 +180,13 @@ a:focus {
     background-color: #8ab9f1;
     color: #000000;
   }
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+#hero h1 {
+  text-align: center; /* Centers text */
+}
