@@ -1,14 +1,14 @@
 /*
 Colors used:
-Primary Color (Black): #000000;
-Secondary Color (Gainsboro): #DCDCDC;
-Secondary Color (GhostWhite): #F8F8FF;
+Primary Color (Black): #333;
+Secondary Color (Gainsboro): #F8F8FF;
+Secondary Color (GhostWhite): #679BF1;
 */
 * {
   box-sizing: border-box;
 }
 header {
-  background-color: #F4EEE1;
+  background-color: #fbf9f9;
   text-align: center;
   padding: 10px 0;
 }
@@ -34,19 +34,13 @@ nav > ul > li > a:hover {
 nav > ul > li > a:active {
   color:#679bf1;
 }
-#hero {
-  background-color: #000000;
-  padding: 20px 0;
-  display: inline-block;
-  width: 100%;
-}
 body {
-    background-color: #000000;
+    background-color: #333;
     font-family: 'DM Serif Display', sans-serif;
     font-size: 16px; /* Sets the font size to 16px */
     font-weight: 300; /* Sets the font weight to 300 */
     line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-    color: #DCDCDC;
+    color: #fbf9f9;
       }
       
       h1, h2, h3, h4 {
@@ -166,7 +160,6 @@ a:focus {
     background-color: #8ab9f1;
     color: #000000;
   }
-
 .button.CV {
     background-color: #f8f8ff;
     color: #000000;
@@ -180,6 +173,29 @@ a:focus {
     background-color: #8ab9f1;
     color: #000000;
   }
+@keyframes color-change {
+    0% {fill: #edc655;}
+    50% {fill: #fcffad;}
+    100% {fill: #f76414;}
+  }
+.sun {
+    animation: 4s color-change infinite alternate linear;
+  }
+@keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(200px,50px);}
+  }
+.cloud-front {
+    animation: 30s cloud-move infinite alternate linear;
+  }
+@keyframes cloud-move-reverse {
+    from {transform: translate(446px,48px);}
+    to {transform: translate(100px, 48px);}
+  }
+.cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+  }
+
 /* Layout styling */
 .container {
   padding: 0 15px;
@@ -187,6 +203,83 @@ a:focus {
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 #hero h1 {
   text-align: center; /* Centers text */
+}
+#hero span {
+  display: block;
+}
+#hero {
+  background-color: #fbf9f9;
+  color: #679bf1;
+  text-align: center;
+  padding: 20px 0;
+  display: block;
+  width: 100%;
+}
+.col-5 {width: 41.67%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.button {
+  display: inline-block;
+  background-color: #ff7f50;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30;
+  transition: 0.2s opacity;
+}
+.button:hover {
+  opacity: 0.8;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  [class*="col-"] {
+  float: left;
+  padding: 10px;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  }
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+/* ==============================
+Extra-large devices (1920px or larger)
+================================= */
+@media only screen and (min-width: 1920px) {
 }
