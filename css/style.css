@@ -34,6 +34,14 @@ nav > ul > li > a:hover {
 nav > ul > li > a:active {
   color:#679bf1;
 }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  text-align: center;
+}
 body {
     background-color: #333;
     font-family: 'DM Serif Display', sans-serif;
@@ -222,9 +230,6 @@ a:focus {
   display: block;
   width: 100%;
 }
-.col-5 {width: 41.67%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
 .container {
   max-width: 1200px;
   margin-left: auto;
@@ -245,6 +250,17 @@ a:focus {
   opacity: 0.8;
 }
 
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.social-media svg { 
+  max-width: 32px;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -253,20 +269,14 @@ Medium devices (640px and larger)
     text-align: unset;
     padding: 20px 0 13px;
   }
-
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
   }
-
-  [class*="col-"] {
-  float: left;
-  padding: 10px;
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  }
+.col-5 {width: 41.67%;}
+.col-md-6 {width: 50%;}
+.col-7 {width: 58.33%;}
 }
 /* ==============================
 Large devices (1024px or larger)
