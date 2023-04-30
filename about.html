@@ -3,7 +3,7 @@
 
 <head>
     <link rel="stylesheet" type="text/css"
-        href= "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" >
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" >
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,20 +13,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Welcome</title>
     <link href="img/favicon.ico" rel="shortcut icon">
+    <script src="https://kit.fontawesome.com/5ad8f04c87.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!-- Header -->
     <header>
         <div class="container">
-            <li><a href="index.html">Diana Fridelova</a></li>
+            <div class="navtoggle" id="myNavtoggle"><!--Mobile Menu Toggle-->
+             <a href="index.html">Diana Fridelova</a>
             <nav>
                 <ul class="navigation">
                     <li><a href="index.html">Work</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
                 </ul>
             </nav>
+             </div>
         </div>
     </header>
     <main>
@@ -184,6 +188,10 @@
             <p>Copyright Diana-Fridelova 2023</p>
         </div>
     </footer>
+    <script
+        src="https://code.jquery.com/jquery-3.6.4.min.js"
+         integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+         crossorigin="anonymous"></script><!--CDN tag-->
     <script src="js/scripts.js"></script><!--Javascript tag-->
 </body>
 

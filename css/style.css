@@ -9,15 +9,11 @@ Secondary Color (GhostWhite): #679BF1;
 }
 header {
   background-color: #fbf9f9;
-  text-align: center;
   padding: 10px 0;
 }
 nav > ul {
   list-style-type: none;
   padding: 0;
-}
-nav > ul > li {
-  display: inline-block;
 }
 nav > ul > li > a {
   padding: 0 15px;
@@ -79,6 +75,12 @@ a {
     color: #679bf1;
     text-decoration: none; /* No underlining */
   }
+a.social-media:hover {
+  text-decoration: none;
+}
+a.social-media {
+  padding-right: 32px;
+}
 a:hover {
     color: #8ab9f1;
     text-decoration: underline; /* Underlining when hovering over a link */
@@ -260,6 +262,18 @@ a:focus {
 .social-media svg { 
   max-width: 32px;
 }
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle, .navtoggle.responsive { /* for Javascript use */
+  position: relative;
+} 
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
 
 /* ==============================
 Medium devices (640px and larger)
@@ -278,6 +292,13 @@ Medium devices (640px and larger)
 .col-md-6 {width: 50%;}
 .col-7 {width: 58.33%;}
 }
+nav > ul > li {
+  display: inline-block;
+}
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
