@@ -10,6 +10,7 @@ Secondary Color (GhostWhite): #679BF1;
 header {
   background-color: #fbf9f9;
   padding: 10px 0;
+  font-size: 22px;
 }
 nav > ul {
   list-style-type: none;
@@ -54,12 +55,10 @@ body {
         font-size: 2.75em;
         font-weight: 700;
       }
-      
       h2 {
         font-size: 2.25em;
         font-weight: 700;
       }
-      
       h3 {
         font-size: 1.75em;
         font-weight: 400;
@@ -270,8 +269,11 @@ a:focus {
   right: 0;
   top: 2px;
   font-size: 20px;
+  padding-right: 0;
 }
-
+.navtoggle.responsive li  {
+  display: block;
+}
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
