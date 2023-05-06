@@ -62,10 +62,12 @@ body {
       h3 {
         font-size: 1.75em;
         font-weight: 400;
+        margin: 0px;
       }
       h4 {
         font-size: 1.35em;
         font-weight: 400;
+        text-align: center;
       }
 img {
     width: 100%;
@@ -286,6 +288,15 @@ a:focus {
 .navtoggle.responsive li:last-child  {
   padding: 0 0 10px;
 }
+.navtoggle li:not(:last-child) {
+  display: none;
+  position: relative;
+}
+.navtoggle.responsive li:not(:last-child) {
+  display: block;
+  position: relative;
+
+}
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -306,8 +317,12 @@ nav > ul > li {
   display: inline-block;
 }
 .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+.navtoggle li:last-child {
   display: none;
 }
+
 }
 /* ==============================
 Large devices (1024px or larger)
