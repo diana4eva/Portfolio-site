@@ -6,3 +6,8 @@ function menuToggle() {
         x.className = 'navtoggle';
     }
 }
+
+$('#goTop').on('click', function(e){
+    $("html, body").animate({scrollTop: $("#top").offset().top}, 500);
+    return false;
+    });

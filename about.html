@@ -3,13 +3,14 @@
 
 <head>
     <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" >
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,400;1,500&family=DM+Serif+Display:ital@0;1&display=swap"
         rel="stylesheet">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Welcome</title>
     <link href="img/favicon.ico" rel="shortcut icon">
@@ -21,16 +22,17 @@
     <header>
         <div class="container">
             <div class="navtoggle" id="myNavtoggle"><!--Mobile Menu Toggle-->
-             <a href="index.html">Diana Fridelova</a>
-            <nav>
-                <ul class="navigation">
-                    <li><a href="index.html">Work</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-                </ul>
-            </nav>
-             </div>
+                <a href="index.html">Diana Fridelova</a>
+                <nav>
+                    <ul class="navigation">
+                        <li><a href="index.html">Work</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
+                                    class="fas fa-bars"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
@@ -61,13 +63,12 @@
                                 empathy, and compassion. I bring a multidisciplinary approach to collaborative work, a
                                 keen eye for detail, and contagious enthusiasm.
                             </p><!-- close paragraph-->
-                            <p><!-- open paragraph -->
-                                <a href="files/Diana Fridelova Resume.pdf" target="_blank" class="button CV">View my
-                                CV</a>
+                            <p class="resume"><!-- open paragraph -->
+                                <a href="files/DianaFridelovaResume.pdf" target="_blank" class="button CV">View my
+                                    Resume</a>
                             </p><!-- close paragraph-->
                         </div><!-- close first column -->
                         <div><!-- open second column -->
-                            <h2>Strengths</h2>
                             <div class="row"><!-- open row that holds (2) columns -->
                                 <div class="col-md-6">
                                     <h3>Core competencies</h3>
@@ -105,7 +106,7 @@
     </main>
     <!-- Footer -->
     <footer>
-        <div class="container">
+        <div class="footer">
             <h2>Get in Touch</h2>
             <p>
                 Looking to make magic happen? Let's connect and see where it takes us :)
@@ -117,12 +118,10 @@
                 <!--Social Media Layout and Placeholders-->
                 <!-- LinkedIn Icon -->
                 <a class="social-media" href="LINKEDIN-URL" target="_blank">
-                    <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
                     <svg height="100%"
                         style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
                         version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve"
-                        xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/"
-                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g id="g5891">
                             <path
                                 d="M512,64c0,-35.323 -28.677,-64 -64,-64l-384,0c-35.323,0 -64,28.677 -64,64l0,384c0,35.323 28.677,64 64,64l384,0c35.323,0 64,-28.677 64,-64l0,-384Z"
@@ -141,7 +140,6 @@
                     </svg>
                 </a>
                 <a class="social-media" href="TWITTER-URL" target="_blank">
-                    <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
                     <svg enable-background="new 0 0 512 512" id="Layer_1" version="1.1" viewBox="0 0 512 512"
                         xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -153,7 +151,6 @@
                     </svg>
                 </a>
                 <a class="social-media" href="BEHANCEF-URL" target="_blank">
-                    <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
                     <svg id="Capa_1" style="enable-background:new 0 0 112.196 112.196;" version="1.1"
                         viewBox="0 0 112.196 112.196" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -188,10 +185,8 @@
             <p>Copyright Diana-Fridelova 2023</p>
         </div>
     </footer>
-    <script
-        src="https://code.jquery.com/jquery-3.6.4.min.js"
-         integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
-         crossorigin="anonymous"></script><!--CDN tag-->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script><!--CDN tag-->
     <script src="js/scripts.js"></script><!--Javascript tag-->
 </body>
 

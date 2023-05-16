@@ -1,8 +1,8 @@
 /*
 Colors used:
 Primary Color (Black): #333;
-Secondary Color (Gainsboro): #F8F8FF;
-Secondary Color (GhostWhite): #679BF1;
+Secondary Color (Gainsboro): #D60A8B;
+Secondary Color (GhostWhite): #fbf9f9;
 */
 * {
   box-sizing: border-box;
@@ -18,18 +18,18 @@ nav > ul {
 }
 nav > ul > li > a {
   padding: 0 15px;
-  text-transform: uppercase;
+  text-transform: lowercase;
   font-weight: 700;
-  color: #4a4a4a;
+  color: #333;
 }
 nav > ul > li > a:visited {
-  color:#679bf1;
+  color:#333;
 }
 nav > ul > li > a:hover {
-  color:#8ab9f1;
+  color:#333;
 }
 nav > ul > li > a:active {
-  color:#679bf1;
+  color:#333;
 }
 ul {
   list-style-type: none;
@@ -40,12 +40,12 @@ li {
   text-align: center;
 }
 body {
-    background-color: #333;
+    background-color: #fbf9f9;
     font-family: 'DM Serif Display', sans-serif;
     font-size: 16px; /* Sets the font size to 16px */
     font-weight: 300; /* Sets the font weight to 300 */
     line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-    color: #fbf9f9;
+    color: #333;
       }
       
       h1, h2, h3, h4 {
@@ -62,18 +62,18 @@ body {
       h3 {
         font-size: 1.75em;
         font-weight: 400;
-        margin: 0px;
       }
       h4 {
         font-size: 1.35em;
-        font-weight: 400;
+        font-weight: 100;
         text-align: center;
       }
 img {
     width: 100%;
+    padding: 20px;
   }
 a {
-    color: #679bf1;
+    color: #333;
     text-decoration: none; /* No underlining */
   }
 a.social-media:hover {
@@ -83,29 +83,29 @@ a.social-media {
   padding-right: 32px;
 }
 a:hover {
-    color: #8ab9f1;
+    color: #333;
     text-decoration: underline; /* Underlining when hovering over a link */
   }
 a:visited { /* visited link */
-    color: #679bf1;
+    color: #333;
   }
 a:active { /* selected link */
-    color: #679bf1;
+    color: #333;
   }
 a:hover,
 a:focus {
-    color: #679bf1;
+    color: #333;
     text-decoration: underline;
   }
 
 .button {
     display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block */
-    background-color: #F8F8FF;
-    color: #000000; /* needed to override the default link color */
+    background-color: transparent;
+    color: #D60A8B; /* needed to override the default link color */
     font-weight: 400;
     padding: 10px;
     border-radius: 3px;
-    border-bottom: 2px solid #8ab9f1; /* width of the border, type, color */
+    border-bottom: 1px solid #D60A8B; /* width of the border, type, color */
     transition: 0.2s opacity;
   }
 .button:hover {
@@ -113,75 +113,75 @@ a:focus {
     text-decoration: none;
   }
 .button:active {
-    color: #8ab9f1;
+    color: #D60A8B;
 }
 
 .button.contact {
     background-color: #f8f8ff;
-    color: #000000;
+    color: #D60A8B;
     text-transform: uppercase;
-    border: 2px solid #8ab9f1;
+    border: 2px solid #D60A8B;
   }
 .button.contact:active {
-    color: #679bf1;
+    color: #D60A8B;
 }
 .button.contact:hover {
-    background-color: #8ab9f1;
+    background-color: #D60A8B;
     color: #000000;
   }
 
 .button.read.more {
-    background-color: #f8f8ff;
-    color: #000000;
+    background-color: transparent;
+    color: #D60A8B;
     text-transform: uppercase;
-    border: 2px solid #8ab9f1;
+    border: 2px solid #D60A8B;
   }
 .button.read.more:active {
-    color: #679bf1;
+    color: #D60A8B;
 }
 .button.read.more:hover {
-    background-color: #8ab9f1;
+    background-color: #D60A8B;
     color: #000000;
   }
 
 .button.case.study {
-    background-color: #f8f8ff;
-    color: #000000;
+    background-color: transparent;
+    color: #D60A8B;
     text-transform: uppercase;
-    border: 2px solid #8ab9f1;
+    border: 2px solid #D60A8B;
   }
 .button.case.study:active {
-    color: #679bf1;
+    color: #D60A8B;
 }
 .button.case.study:hover {
-    background-color: #8ab9f1;
+    background-color: #D60A8B;
     color: #000000;
   }
 
 .button.prototype {
-    background-color: #f8f8ff;
-    color: #000000;
+    background-color: transparent;
+    color: #D60A8B;
     text-transform: uppercase;
-    border: 2px solid #8ab9f1;
+    border: 2px solid #D60A8B;
   }
 .button.prototype:active {
-    color: #679bf1;
+    color: #D60A8B;
 }
 .button.prototype:hover {
-    background-color: #8ab9f1;
+    background-color: #D60A8B;
     color: #000000;
   }
 .button.CV {
-    background-color: #f8f8ff;
-    color: #000000;
+    background-color: transparent;
+    color: #D60A8B;
     text-transform: uppercase;
-    border: 2px solid #8ab9f1;
+    border: 2px solid #D60A8B;
   }
 .button.CV:active {
-    color: #679bf1;
+    color: #D60A8B;
 }
 .button.CV:hover {
-    background-color: #8ab9f1;
+    background-color: #D60A8B;
     color: #000000;
   }
 @keyframes color-change {
@@ -211,14 +211,35 @@ a:focus {
 .container {
   padding: 0 15px;
 }
+
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
+
 .row::after {
   content: "";
   clear: both;
   display: table;
 }
+
+.container {
+  padding: 25px;
+}
+
+.resume {
+  padding-top: 35px;
+  padding-bottom: 30px;
+}
+
+.footer {
+  text-align: center;
+}
+
+#work .row {
+  padding-bottom: 28px;
+  border-bottom: 1px solid #324a42;
+}
+
 #hero h1 {
   text-align: center; /* Centers text */
 }
@@ -227,9 +248,10 @@ a:focus {
 }
 #hero {
   background-color: #fbf9f9;
-  color: #679bf1;
+  color: #D60A8B;
   text-align: center;
   padding: 20px 0;
+  padding-bottom: 30px;
   display: block;
   width: 100%;
 }
@@ -297,6 +319,7 @@ a:focus {
   position: relative;
 
 }
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -322,13 +345,26 @@ nav > ul > li {
 .navtoggle li:last-child {
   display: none;
 }
+img {
+  max-width: 450px;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 }
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-
+  img {
+    max-width: 100%;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 /* ==============================
 X-large devices (1440px or larger)
